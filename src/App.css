@@ -27,7 +27,20 @@
 .App-link {
   color: #61dafb;
 }
-
+.NavBar {
+  display:flex;
+  justify-content:space-between;
+}
+.NavBar .logo {
+  padding: 15px;
+}
+.NavBar ul {
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
