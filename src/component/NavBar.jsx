@@ -2,6 +2,7 @@ import CartWidget from "./CartWidget"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link, NavLink } from "react-router-dom";
 // import logo from '../../img/pluma.svg';
 
 const NavBar = () =>{
@@ -12,8 +13,8 @@ const NavBar = () =>{
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Almohadas</Nav.Link>
-            <Nav.Link href="#pricing">Colchones</Nav.Link>
+            <NavLink className={({isActive})=> isActive ? 'btn btn-light me-2' : 'btn btn-outline-light me-2'} to='cat/almohadas'>Almohadas</NavLink>
+            <NavLink className={({isActive})=> isActive ? 'btn btn-light' : 'btn btn-outline-light'} to='cat/colchones'>Colchones</NavLink>
             </Nav>
           <Nav>
             <Nav.Link href="#deets"><CartWidget /></Nav.Link>

@@ -7,10 +7,10 @@ let productos = [
     {id: '5', name: 'COLCHON 3', categoria: 'Colchones', stock: '100', precio: '23000', foto:''}
   ];
 
-  export const gFetch = () =>{
+  export const gFetch = (id) =>{
     return new Promise((resolve, reject) =>{
         setTimeout(()=>{
-            resolve(productos)
+            resolve(id ? productos.find(prod => prod.id === id) : productos)
             }, 3000)
     })
   }
