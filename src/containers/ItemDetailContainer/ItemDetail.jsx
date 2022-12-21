@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ItemDetail = (product) => {
+const ItemDetail = ({product}) => {
   console.log(product)
   return (
     <div>
