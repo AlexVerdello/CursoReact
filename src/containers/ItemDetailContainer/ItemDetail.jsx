@@ -1,4 +1,5 @@
 import React from 'react'
+import ContCant from './ContCant'
 
 const ItemDetail = ({product}) => {
   console.log(product)
@@ -12,6 +13,7 @@ const ItemDetail = ({product}) => {
     <a href="#" className="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+<ContCant />
     </div>
   )
 }
